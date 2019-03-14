@@ -38,7 +38,7 @@ con_nombre.nombre
 
 cliente_t = Transaction.where("client_id"=> 1)
 
-## cuantas transacciones tiene 
+### cuantas transacciones tiene 
 
 cliente_t.size 
 
@@ -46,3 +46,4 @@ cliente_t.count
 
 
 
+###

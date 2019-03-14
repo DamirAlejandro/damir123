@@ -18,7 +18,9 @@ select * from transactions where concepto='botana';
 
 select client_id from transactions where concepto='botana';
 
-
 ### queries embebidas 
 
 select (select nombre from clients where clients.id = client_id) from transactions where concepto = 'botana';
+
+### 
+
