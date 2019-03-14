@@ -34,7 +34,15 @@ con_nombre = Transaction.select("client_id, concepto, cantidad, created_at, id, 
 ### para obtener el nombre
 con_nombre.nombre
 
+### buscar todas las transacciones de un cliente 
 
+cliente_t = Transaction.where("client_id"=> 1)
+
+## cuantas transacciones tiene 
+
+cliente_t.size 
+
+cliente_t.count
 
 
 
