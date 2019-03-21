@@ -1,4 +1,4 @@
-### prueba 
+### prueba .
 
 ### buscar la transaction con id = 2 
 anterior = Transaction.find(2)
@@ -44,6 +44,41 @@ cliente_t.size
 
 cliente_t.count
 
+###<%= 'x' %> Se usa el igual cuando son instrucciones que se desea que el usuario vea
+###<% 'x' %> Se usa para instrucciones de logica
 
+## Muestra todos los elementos
 
-###
+Register.all
+
+### Guardar en una variable la cantidad de productos perecederos
+
+perecederos = Register.where(:categories => "Perecederos")
+
+### Guardar en una variable la cantidad de productos no_perecederos
+
+no_perecederos = Register.where(:categories => "No perecederos")
+
+### Se pueden ordenar los elementos 
+
+Register.order("products")
+
+### Y guardar en una variable
+
+ordenar_productos = Register.order("products")
+
+### Manera ascendente
+
+Register.order("products DESC")
+
+### Limitar 
+
+Register.limit(3)
+
+Register.limit(5).offset(2) ### El limite seran 5 pero el offset indica que se empezara desde el (x)
+
+### Se pueden combinar entre todas las consultas
+
+Register.order("products DESC").limit(3)
+
+### 

@@ -22,5 +22,6 @@ select client_id from transactions where concepto='botana';
 
 select (select nombre from clients where clients.id = client_id) from transactions where concepto = 'botana';
 
-### 
 
+
+select * from registers where "quantity" = 2;

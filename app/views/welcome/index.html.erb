@@ -1,7 +1,11 @@
-<h3>app de Damir</h3>
+<h3><center>App de <%= @autor %></center></h3>
 
-<p>pestamos en la vista index<p>
+<p>Esta es la pagina index de la aplicacion</p>
 
+<p><% @limite.times do%></p>
+	<%= @mensaje %>
+
+<p><% end -%></p>
 <br>
 
 otro text

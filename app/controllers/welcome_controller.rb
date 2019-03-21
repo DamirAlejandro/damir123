@@ -1,5 +1,9 @@
 class WelcomeController < ApplicationController
 	def index
-		puts "entramos en el welcome index controller"
+		@autor='Damir Alejandro'
+		@limite= 5
+		@mensaje= 'Hola'
+		puts "Entramos en el welcome index controller"
+
 	end
 end
